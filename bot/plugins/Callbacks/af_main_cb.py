@@ -180,7 +180,7 @@ async def cb_settings(bot, update: CallbackQuery):
     bot_fname= bot_status.first_name
     
     text =f"<i>{bot_fname}'s</i> Auto Filter Settings Pannel.....\n"
-    text+=f"\n<i>You Can Use This Menu To Change Connectivity And Know Status Of Your Every Connected Channel, Change Filter Types, Configure Filter Results And To Know Status Of Your Group...</i>"
+    text+=f"\n<i>You Can Use This Menu To Change Connectivity And Know Status Of Your Every Connected Channel, Change Filter Types, Configure Filter Results And To Know Status Of Your Group...  \n\n BOT MADE BY :- @team_silent_king                                   </i>"
     
     buttons = [
         [
