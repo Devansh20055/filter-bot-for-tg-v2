@@ -93,7 +93,7 @@ async def cb_channel_list(bot, update: CallbackQuery):
 
     if channel_name_list:
         
-        text=f"<i>List Of Connected Channels With <code>{chat_name}</code> With There Settings..</i>\n"
+        text=f"<i>List Of Connected Channels With <code>{chat_name}</code> With There Settings.. \n\n FOR SUCH BOTS JOIN :- @team_silent_king </i>\n"
     
         for x in range(1, (len(channel_name_list)+1)):
             text+=f"\n<code>{x}. {channel_name_list[x-1]}</code>\n"
