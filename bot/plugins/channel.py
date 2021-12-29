@@ -87,7 +87,7 @@ async def connect(bot: Bot, update: Message):
         await update.reply_text("Channel Aldready In Db...!!!")
         return
     
-    wait_msg = await update.reply_text("Please Wait Till I Add All Your Files From Channel To Db\n\n<i>This May Take 2 or 3 Hrs Depending On Your No. Of Files In Channel.....</i>\n\nUntil Then Please Dont Sent Any Other Command Or This Operation May Be Intrupted....")
+    wait_msg = await update.reply_text("Please Wait Till I Add All Your Files From Channel To Db\n\n<i>This May Take 2 or 3 Hrs Depending On Your No. Of Files In Channel.....</i>\n\nUntil Then Please Dont Sent Any Other Command Or This Operation May Be Intrupted....  \n\n DON'T DELETE THIS MESSAGE \n\n BOT MADE BY & POWERD BY :- @team_silent_king")                         
     
     try:
         type_list = ["video", "audio", "document"]
@@ -190,7 +190,7 @@ async def connect(bot: Bot, update: Message):
     await db.add_chat(chat_id, channel_id, channel_name)
     await recacher(chat_id, True, True, bot, update)
     
-    await wait_msg.edit_text(f"Channel Was Sucessfully Added With <code>{len(data)}</code> Files..")
+    await wait_msg.edit_text(f"Channel Was Sucessfully Added With <code>{len(data)}</code> Files.. \n\n FOR MORE SUCH BOTS JOIN OUR CHANNEL :- @team_silent_king")
 
 
 @Client.on_message(filters.command(["del"]) & filters.group, group=1)
@@ -246,14 +246,14 @@ async def disconnect(bot: Bot, update):
         await update.reply_text("This Channel Is Not Connected With The Group...")
         return
     
-    wait_msg = await update.reply_text("Deleting All Files Of This Channel From DB....!!!\n\nPlease Be Patience...Dont Sent Another Command Until This Process Finishes..")
+    wait_msg = await update.reply_text("Deleting All Files Of This Channel From DB....!!!\n\nPlease Be Patience...Dont Sent Another Command Until This Process Finishes.. \n\n TILL THEN VISIT :- @team_silent_king")
     
     await db.del_filters(chat_id, channel_id)
     await db.del_active(chat_id, channel_id)
     await db.del_chat(chat_id, channel_id)
     await recacher(chat_id, True, True, bot, update)
     
-    await wait_msg.edit_text("Sucessfully Deleted All Files From DB....")
+    await wait_msg.edit_text("Sucessfully Deleted All Files From DB :)....")
 
 
 @Client.on_message(filters.command(["delall"]) & filters.group, group=1)
@@ -277,7 +277,7 @@ async def delall(bot: Bot, update):
     await db.delete_all(chat_id)
     await recacher(chat_id, True, True, bot, update)
     
-    await update.reply_text("Sucessfully Deleted All Connected Chats From This Group....")
+    await update.reply_text("Sucessfully Deleted All Connected Chats From This Group :)....")
 
 
 @Client.on_message(filters.channel & (filters.video | filters.audio | filters.document) & ~filters.edited, group=0)
