@@ -32,8 +32,8 @@ async def cb_about(bot, update: CallbackQuery):
     text=f"<i><u>Bot's Status</u></i>\n"
     text+=f"\n<b><i>Bot's Uptime:</i></b> <code>{time_formatter(time.time() - start_uptime)}</code>\n"
     text+=f"\n<b><i>Bot Funtion:</i></b> <i>Auto Filter Files</i>\n"
-    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/ITS_NOT_ROMEO"@ITS_NOT_ROMEO</a>\n"""
-    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com/Devansh20055/filter-bot-for-tg-v2">Source</a>"""
+    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/off_chats>"CLICK ME </a>\n"""
+    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com/Devansh20055/filter-bot-for-tg-v2">Source :)</a>"""
 
     buttons = [
         [
