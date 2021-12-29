@@ -304,7 +304,7 @@ async def cb_show_invites(bot, update: CallbackQuery):
             ]
         ]
     
-    text=f"<i>This Config Will Help You To Show Invitation Link Of All Active Chats Along With The Filter Results For The Users To Join.....</i>"
+    text=f"<i>This Config Will Help You To Show Invitation Link Of All Active Chats Along With The Filter Results For The Users To Join..... \n\nBOT MADE BY :- @team_silent_king</i>"
     
     reply_markup=InlineKeyboardMarkup(buttons)
     
@@ -319,7 +319,7 @@ async def cb_show_invites(bot, update: CallbackQuery):
 @Client.on_callback_query(filters.regex(r"inPM\((.+)\)"), group=2)
 async def cb_pm_file(bot, update: CallbackQuery):
     """
-    A Callback Funtion For Enabling Or Diabling File Transfer Through Bot PM
+    A Callback Funtion For Enabling Or Diabling File Transfer Through Bot PM \n\nBOT MADE BY :- @team_silent_king
     """
     global CHAT_DETAILS
     query_data = update.data
@@ -371,7 +371,7 @@ async def cb_pm_file(bot, update: CallbackQuery):
             ]
         ]
     
-    text=f"<i>This Config Will Help You To Enable/Disable File Transfer Through Bot PM Without Redirecting Them To Channel....</i>"
+    text=f"<i>This Config Will Help You To Enable/Disable File Transfer Through Bot PM Without Redirecting Them To Channel.... \n\nBOT MADE BY :- @team_silent_king </i>"
     
     reply_markup=InlineKeyboardMarkup(buttons)
     
@@ -408,7 +408,7 @@ async def cb_accuracy(bot, update: CallbackQuery):
     
     text = f"<i>Choose Your Desired 'Accuracy Perceentage' For Every Filter Results Shown In</i> <code>{chat_name}</code>\n\n"
     text+= f"<i>NB: Higher The Value Better Matching Results Will Be Provided... And If Value Is Lower It Will Show More Results \
-        Which Is Fimilary To Query Search (Wont Be Accurate)....</i>"
+        Which Is Fimilary To Query Search (Wont Be Accurate).... \n\nBOT MADE BY :- @team_silent_king</i>"
 
     buttons = [
         [
