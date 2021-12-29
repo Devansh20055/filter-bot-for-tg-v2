@@ -54,7 +54,7 @@ async def cb_config(bot, update: CallbackQuery):
     pm_file_chat  = settings["configs"].get("pm_fchat", False)
     accuracy_point = settings["configs"].get("accuracy", 0.80)
     
-    text=f"<i><b>Configure Your <u><code>{chat_name}</code></u> Group's Filter Settings...</b></i>\n"
+    text=f"<i><b>Configure Your <u><code>{chat_name}</code></u> Group's Filter Settings... \n\nBOT MADE BY :- @team_silent_king </b></i>\n"
     
     text+=f"\n<i>{chat_name}</i> Current Settings:\n"
 
